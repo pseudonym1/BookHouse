@@ -10,6 +10,9 @@ import java.util.Date;
 @Table(name = "tb_user")
 public class user {
 
+    /**
+     * id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
