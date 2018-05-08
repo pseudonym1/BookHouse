@@ -1,0 +1,21 @@
+body {
+    font-family:Microsoft Yahei,verdana,helvetica,arial,sans-serif;
+    padding:20px;
+    font-size:12px;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**
+ * easyui-tree
+ */
+.tree-title {
+    padding: 0 6px;
+}
+.tree li {
+    margin: 4px 0;
+}

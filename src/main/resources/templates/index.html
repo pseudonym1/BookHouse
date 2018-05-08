@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>有缘书屋</title>
+    <meta charset="UTF-8"/>
+    <title>随缘书屋</title>
+    <link rel="stylesheet" type="text/css" data-th-href="@{/css/login.css}"/>
+    <link rel="shortcut icon" data-th-href="@{/images/favicon.ico}" />
+    <script type="text/javascript" data-th-src="@{/js/lib/jquery.min.js}"></script>
+
 </head>
 <body>
 
-<p> just for test </p>
+
+<form data-th-action="@{/login}" class="login" method="post" id="form1">
+    <h1>有缘书屋登录系统</h1>
+    <p class="error" data-th-text="${msg}"></p>
+    <input type="text" name="m_username" class="login-input" autofocus="true" th:placeholder="用户名"/>
+    <input type="password" name="m_password" class="login-input" th:placeholder="密码"/>
+
+    <!--验证码-->
+
+    <input type="submit" class="login-submit" name="login" data-th-value="登录" id="m_login"/>
+    <input type="hidden" data-th-value="${session.lang}" id="backlang"/>
+    <!--the sign of submit method-->
+    <input type="hidden" value="submitval" id="submitval" name="submitval"/>
+</form>
+
+
+<section class="about">
+    <p id="time" name="time" data-th-text="知识的海洋，美丽的世界"></p>
+</section>
 
 </body>
 </html>

@@ -1,0 +1,30 @@
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.building-grid {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.building-grid li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 10px 10px;
+}
+
+.building-table {
+    height: 98%;
+}
+
+.building-table tr {
+    margin: 15px 0;
+}
+
+.building-table td {
+    width: 120px;
+    line-height: 20px;
+}

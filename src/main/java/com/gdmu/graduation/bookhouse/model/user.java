@@ -5,14 +5,13 @@ import java.util.Date;
 
 /**
  * the user model
+ * @author kaylisa
  */
 @Entity
 @Table(name = "tb_user")
 public class user {
 
-    /**
-     * id
-     */
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
